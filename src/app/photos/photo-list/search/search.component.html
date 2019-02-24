@@ -1,0 +1,21 @@
+<div class="text-center mt-3 mb-3">
+    <form>
+        <i aria-hidden="true" class="fa fa-search mr-1"></i>
+        <input 
+            class="rounded" 
+            type="search" 
+            placeholder="search..." 
+            autofocus
+            (keyup)="debounce.next($event.target.value)"
+            [value]="value"
+            >
+    </form>
+</div>
+
+<!--
+    {{ filter }}
+Angular parte 1: Fundamentos - Aula 06 Melhorando a experiência do usuário item 02 Binding de eventos 
+h1.adEventListener('keyup', function(event)){
+    alert('oi' + event.target.value)  // para o dado digitado
+});
+-->
